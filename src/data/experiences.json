@@ -1,0 +1,50 @@
+[
+  {
+    "id": "signature-1",
+    "category": "Signature Experiences",
+    "title": "Bay Breeze Escape",
+    "subtitle": "Kayak + Luxury Picnic Experience",
+    "description": "Guided or self-paced kayak session followed by a styled picnic setup (pillows, blankets, décor). Includes a charcuterie board and sparkling drinks.",
+    "basePrice": 150,
+    "baseGuests": 2,
+    "additionalGuestFee": 40,
+    "duration": "2.5 hours",
+    "image": "https://images.unsplash.com/photo-1520188740392-67fe8512f718?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "signature-2",
+    "category": "Signature Experiences",
+    "title": "Sunset & Bubbles",
+    "subtitle": "Golden Hour Luxury Picnic",
+    "description": "Fully styled coastal picnic with a charcuterie board, sparkling beverages, and a curated playlist via Bluetooth speaker. Perfect golden hour photo-ready setup.",
+    "basePrice": 125,
+    "baseGuests": 2,
+    "additionalGuestFee": 35,
+    "duration": "2 hours",
+    "image": "https://images.unsplash.com/photo-1530105077180-2a5b6ceaf59c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "social-1",
+    "category": "Evening & Social",
+    "title": "S'mores & Stories Night",
+    "subtitle": "Firepit Experience Under the Stars",
+    "description": "Firepit setup with cozy seating, a s'mores bar, hot cocoa, lantern lighting, and soft music.",
+    "basePrice": 110,
+    "baseGuests": 4,
+    "additionalGuestFee": 20,
+    "duration": "Evening",
+    "image": "https://images.unsplash.com/photo-1525095393699-317282decc82?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "wellness-1",
+    "category": "Wellness & Slow Living",
+    "title": "Bay Reset",
+    "subtitle": "Relax & Recharge Experience",
+    "description": "Guided yoga or stretch session by the water, followed by an herbal tea service and quiet journaling time.",
+    "basePrice": 85,
+    "baseGuests": 1,
+    "additionalGuestFee": 85,
+    "duration": "Morning",
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  }
+]

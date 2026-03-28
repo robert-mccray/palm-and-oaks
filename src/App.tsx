@@ -1,19 +1,21 @@
-// src/App.tsx
+import Hero from './components/Hero';
+import ExperienceCard from './components/ExperienceCard';
+import experiencesData from './data/experiences.json';
 
 function App() {
   return (
-    <div className="min-h-screen bg-sand text-gray-900 font-sans">
-      {/* Temporary Header */}
-      <header className="flex justify-between items-center p-6 bg-white shadow-sm">
-        <h1 className="text-2xl font-bold tracking-wide text-coastal-blue">Palm and Oaks</h1>
-        <nav className="flex gap-4">
-          <a href="#experiences" className="text-gray-600 hover:text-gray-900 pt-2">Experiences</a>
-          {/* Flow A: The Airbnb Deep Link */}
+    <div className="min-h-screen bg-sand/30 text-gray-900 font-sans">
+      {/* Sticky Header */}
+      <header className="fixed top-0 w-full z-50 flex justify-between items-center p-6 bg-white/90 backdrop-blur-sm shadow-sm">
+        <h1 className="text-2xl font-bold tracking-wide text-coastal-blue font-serif">Palm & Oaks</h1>
+        <nav className="hidden md:flex gap-6 items-center">
+          <a href="#experiences" className="text-gray-600 hover:text-coastal-blue font-medium">Experiences</a>
+          <a href="#glowforge" className="text-gray-600 hover:text-coastal-blue font-medium">Keepsakes</a>
           <a 
             href="https://www.airbnb.com/your-listing-link" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-coastal-blue text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition"
+            className="bg-coastal-blue text-white px-5 py-2 rounded-md hover:bg-opacity-90 transition shadow-sm font-medium"
           >
             Book Your Stay
           </a>
@@ -21,31 +23,31 @@ function App() {
       </header>
 
       <main>
-        {/* Temporary Hero */}
-        <section className="py-20 text-center bg-coastal-blue text-white">
-          <h2 className="text-5xl font-serif mb-4">Where Soft Life Meets the Shoreline</h2>
-          <p className="text-lg max-w-2xl mx-auto">Luxury Picnics, Coastal Moments & Bay Breezes.</p>
-        </section>
+        <Hero />
 
-        {/* Temporary Experiences Section */}
-        <section id="experiences" className="py-20 px-6 max-w-5xl mx-auto">
-          <h3 className="text-3xl font-bold mb-8 text-center">Curated Experiences</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* We will map over your experiences.json here later */}
-            <div className="p-6 bg-white rounded-lg shadow-md border border-gray-100">
-              <h4 className="text-xl font-bold mb-2">Bay Breeze Escape</h4>
-              <p className="text-gray-600 mb-4">Guided kayak session + luxury picnic setup.</p>
-              <button className="bg-gray-900 text-white px-4 py-2 rounded-md w-full">
-                Reserve Experience
-              </button>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md border border-gray-100">
-              <h4 className="text-xl font-bold mb-2">Custom Glowforge Sign</h4>
-              <p className="text-gray-600 mb-4">Personalized keepsake for your event.</p>
-              <button className="bg-gray-900 text-white px-4 py-2 rounded-md w-full">
-                Add to Booking
-              </button>
-            </div>
+        {/* Experiences Grid */}
+        <section id="experiences" className="py-24 px-6 max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-serif text-gray-900 mb-4">Curated Experiences</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Elevate your stay with signature moments designed for connection, relaxation, and memories.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {experiencesData.map((exp) => (
+              <ExperienceCard 
+                key={exp.id}
+                title={exp.title}
+                subtitle={exp.subtitle}
+                description={exp.description}
+                basePrice={exp.basePrice}
+                baseGuests={exp.baseGuests}
+                additionalGuestFee={exp.additionalGuestFee}
+                duration={exp.duration}
+                image={exp.image}
+              />
+            ))}
           </div>
         </section>
       </main>
