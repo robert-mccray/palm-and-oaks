@@ -3,6 +3,7 @@ import ExperienceCard from './components/ExperienceCard';
 import ProductCard from './components/ProductCard';
 import experiencesData from './data/experiences.json';
 import keepsakesData from './data/keepsakes.json';
+import ReviewGrid from './components/ReviewGrid';
 
 function App() {
   return (
@@ -52,6 +53,8 @@ function App() {
             ))}
           </div>
         </section>
+
+        <ReviewGrid />
 
         {/* Keepsakes Section */}
         <section id="glowforge" className="py-24 px-6 max-w-7xl mx-auto bg-white rounded-3xl shadow-sm my-12 border border-gray-50">
