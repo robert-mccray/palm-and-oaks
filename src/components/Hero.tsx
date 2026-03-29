@@ -24,7 +24,7 @@ export default function Hero() {
             Explore Experiences
           </a>
           <a 
-            href="https://www.airbnb.com/your-listing-link" 
+            href="https://www.airbnb.com/rooms/687831562461834966?unique_share_id=5e3073b6-a726-44d6-afb3-867444fa730a&viralityEntryPoint=1&s=76" 
             target="_blank" 
             rel="noopener noreferrer"
             className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-md hover:bg-white/10 transition shadow-lg"

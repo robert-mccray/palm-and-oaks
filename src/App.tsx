@@ -12,7 +12,7 @@ function App() {
           <a href="#experiences" className="text-gray-600 hover:text-coastal-blue font-medium">Experiences</a>
           <a href="#glowforge" className="text-gray-600 hover:text-coastal-blue font-medium">Keepsakes</a>
           <a 
-            href="https://www.airbnb.com/your-listing-link" 
+            href="https://www.airbnb.com/rooms/687831562461834966?unique_share_id=5e3073b6-a726-44d6-afb3-867444fa730a&viralityEntryPoint=1&s=76" 
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-coastal-blue text-white px-5 py-2 rounded-md hover:bg-opacity-90 transition shadow-sm font-medium"
