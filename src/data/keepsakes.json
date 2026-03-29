@@ -1,0 +1,30 @@
+[
+  {
+    "id": "gf-001",
+    "title": "Custom Engraved Charcuterie Board",
+    "description": "A beautiful wooden board engraved with your family name or a special date. Yours to use during the stay and take home.",
+    "price": 65,
+    "image": "https://images.unsplash.com/photo-1615486171448-4fd324aa86b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "gf-002",
+    "title": "Personalized Picnic Welcome Sign",
+    "description": "A customized wooden sign (e.g., 'Happy Anniversary Sarah & John') displayed at your picnic setup.",
+    "price": 40,
+    "image": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "gf-003",
+    "title": "Premium Proposal/Event Signage",
+    "description": "Large acrylic or wood 'Will You Marry Me?' or 'Welcome' sign, styled with the setup.",
+    "price": 120,
+    "image": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "gf-004",
+    "title": "Bay Breeze Keepsake Keychain",
+    "description": "A small engraved wooden keychain featuring the coordinates of the bay.",
+    "price": 15,
+    "image": "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+  }
+]
